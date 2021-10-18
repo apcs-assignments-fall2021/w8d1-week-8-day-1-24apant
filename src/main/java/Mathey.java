@@ -9,28 +9,60 @@ public class Mathey {
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
 
-
+    public static int max(int a, int b){
+        if (a > b || a == b){
+            return  a;
+        }
+        else{
+            return b;
+        }
+    }
 
 
     /* Write another method called max that takes **two doubles**
-     * Ex. max(1, 4, 2) => 4
+     * Ex. max(1.5, 4.0) => 4.0
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
 
-
+    public static double max(double a, double b){
+        if (a > b || a == b){
+            return a;
+        }
+        else{
+            return b;
+        }
+    }
 
 
     /* Write another method called max that takes **three integers**
      * Ex. max(1, 4, 2) => 4
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+    public static int max(int d, int b, int c){
+        int a = Math.max(d, c);
+        if (a > b || a == b){
+            return  a;
+        }
+        else{
+            return b;
+        }
+    }
 
 
 
     /* Write another method called max that takes **four doubles**
      * Ex. max(1.0, 4.25, 2.1) => 4.25
      */
+    public static double max(double a, double b, double f, double e){
+        double d = Math.max(a, b);
+        double c = Math.max(e, f);
+        if(d > c || d == c){
+            return d;
+        }
+        else{
+            return c;
+        }
+    }
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
 
 
@@ -44,7 +76,9 @@ public class Mathey {
      *     randomInteger(1, 4) => 4
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+    public static int randomInt(int a, int b) {
+        return (int) (Math.random() * (b - a) + a);
+    }
 
 
 
@@ -56,7 +90,9 @@ public class Mathey {
      *     randomInteger(5) => 0
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+    public static int randomInt(int b) {
+        return (int) (Math.random() * (b));
+    }
 
 
 
@@ -72,7 +108,13 @@ public class Mathey {
      *     pow(3, 4) => 81
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+    public static int pow(int a, int b){
+        int total = 1;
+        for (int i = 0; i < b; i++) {
+            total *= a;
+        }
+        return total;
+    }
 
 
 
@@ -82,7 +124,12 @@ public class Mathey {
      *     abs(-2) => 2
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+    public static int abs(int a){
+        if (a < 0){
+            a -= (a * 2);
+        }
+        return a;
+    }
 
 
 
@@ -93,7 +140,9 @@ public class Mathey {
      *     round(2.5) => 2
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+    public static int round(double a){
+        return (int) (a + 0.5);
+    }
 
 
 
@@ -107,7 +156,9 @@ public class Mathey {
      *     floor(2.999999999999) => 2
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+    public static int floor(double b){
+        return (int) b;
+    }
 
 
 
@@ -121,7 +172,9 @@ public class Mathey {
      *     ceil(3.01) => 4
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+     public static int ceil(double a){
+         return (int) (a + (0.999999999999999));
+     }
 
 
 
