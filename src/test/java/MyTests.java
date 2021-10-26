@@ -16,7 +16,7 @@ public class MyTests {
         System.out.println(Mathey.abs(14)); // 14
         System.out.println(Mathey.round(3.4999999999)); // 3
         System.out.println(Mathey.floor(3.999182398043)); // 3
-        System.out.println(Mathey.ceil(3.0000001331412)); // 4
+        System.out.println(Mathey.ceil(3.999999999999)); // 4
 
     }
 }
